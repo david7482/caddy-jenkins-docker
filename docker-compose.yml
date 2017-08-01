@@ -6,7 +6,7 @@ services:
     container_name: jenkins
     restart: always
     group_add:
-      - 999
+      - ${DOCKERGID}
     environment:
       - JAVA_OPTS="-Xmx8192m"
       - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/go/bin
