@@ -1,0 +1,5 @@
+jenkins.example.com {
+        proxy / http://jenkins:8080 {
+                transparent
+        }
+}
