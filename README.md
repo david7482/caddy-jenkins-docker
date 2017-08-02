@@ -1,5 +1,5 @@
 # caddy-jenkins-docker
-Host Jenkins with Caddy as https proxy in Docker
+Setup Jenkins with Caddy as https proxy in Docker
 
 ## How to run
 ```
