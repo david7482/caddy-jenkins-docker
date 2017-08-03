@@ -30,5 +30,5 @@ services:
     environment:
       - CADDYPATH=/etc/caddycerts
     volumes:
-      - /home/ubuntu/CaddyJenkins/Caddyfile:/etc/Caddyfile
-      - /home/ubuntu/CaddyJenkins/caddy:/etc/caddycerts
+      - ${PWD}/Caddyfile:/etc/Caddyfile
+      - ${PWD}/caddy:/etc/caddycerts
