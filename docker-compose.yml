@@ -8,13 +8,12 @@ services:
     group_add:
       - ${DOCKERGID}
     environment:
-      - JAVA_OPTS="-Xmx8192m"
-      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/go/bin
+      - JAVA_OPTS="-Xmx4096m"
+      - JENKINS_HOME=${PWD}/jenkins_home
     volumes:
-      - /home/ubuntu/CaddyJenkins/jenkins_home:/var/jenkins_home
+      - ${PWD}/jenkins_home:${PWD}/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
       - /usr/bin/docker:/usr/bin/docker
-      - /usr/local/go:/usr/local/go
       - /usr/lib/x86_64-linux-gnu/libltdl.so.7:/usr/lib/x86_64-linux-gnu/libltdl.so.7
 
   caddy:
