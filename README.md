@@ -2,7 +2,7 @@
 Setup Jenkins with Caddy as https proxy in Docker
 
 ## Requirement
-- Install docker and docker-compose first
+- Install  [docker](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/) and [docker-compose](https://docs.docker.com/compose/install/#prerequisites) first
 - Make sure the uid and gid of current login user are both 1000 (jenkins docker's requirement)
 
 ## How to run
