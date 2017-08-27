@@ -1,4 +1,4 @@
-version: '2'
+version: '2.1'
 
 services:
   jenkins:
@@ -6,7 +6,7 @@ services:
     container_name: jenkins
     restart: always
     group_add:
-      - ${DOCKERGID}
+      - ${DOCKERGID:-999}
     environment:
       - JAVA_OPTS="-Xmx4096m"
       - JENKINS_HOME=${PWD}/jenkins_home
